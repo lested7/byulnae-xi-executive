@@ -1,6 +1,5 @@
-// Set these values from your Supabase project's public Project URL and anon/publishable key.
-// The key is public by design; protect customer records with the RLS policy in supabase-schema.sql.
+// The publishable key is safe to expose in browser code. Database access is restricted by RLS.
 window.SUPABASE_CONFIG = {
-  url: '',
-  anonKey: ''
+  url: 'https://awattiplxnbqzmmkjpcn.supabase.co',
+  publishableKey: 'sb_publishable_rGKGt9_7kvBMxrA1TqR-gg_Yq3ABuSV'
 };
