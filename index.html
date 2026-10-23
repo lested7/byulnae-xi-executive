@@ -74,10 +74,11 @@
       <form class="interest-form" id="interest-form">
         <label for="customer-name">이름</label><input id="customer-name" name="name" autocomplete="name" maxlength="40" placeholder="이름을 입력해 주세요" required>
         <label for="customer-phone">휴대폰 번호</label><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="010-0000-0000" required>
-        <label class="consent-row"><input type="checkbox" name="consent" required><span>상담 안내를 위해 이름과 휴대폰 번호를 수집·이용하는 데 동의합니다.</span></label>
+        <div class="privacy-notice"><strong>개인정보 수집·이용 안내</strong><p>운영자: 해뜨는집 · 수집 항목: 이름, 휴대폰 번호 · 이용 목적: 관심고객 상담 안내</p><p>보유 기간: 수집일부터 1개월 또는 상담 종료 시까지(먼저 도래하는 때 파기)</p><p>동의를 거부할 수 있으며, 거부 시 온라인 관심고객 등록은 할 수 없습니다. 전화 상담은 대표번호 1668-4116으로 문의해 주세요.</p></div>
+        <label class="consent-row"><input type="checkbox" name="consent" required><span>위 개인정보 수집·이용 안내를 확인했으며 이에 동의합니다.</span></label>
         <div class="form-trap" aria-hidden="true"><label for="customer-company">회사용</label><input id="customer-company" name="company" tabindex="-1" autocomplete="off"></div>
         <button class="button button-dark interest-submit" type="submit">관심고객 등록 <span>↗</span></button>
-        <p class="form-status" id="form-status" role="status" aria-live="polite">등록 정보는 상담 안내에만 사용됩니다.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite">등록 정보는 안내된 기간 동안 상담 안내에만 사용됩니다.</p>
       </form>
     </section>
     <section class="closing"><div class="closing-sun">XI</div><div class="section-label">BYULNAE XI · EXECUTIVE</div><h2>예약 방문 고객 상품권 증정</h2><p>방문 예약은 필수입니다. 대표번호로 예약하고 혜택을 확인하세요.</p><a class="button button-light call-button" href="tel:1668-4116"><span>방문 예약</span>1668-4116 <span>전화 문의 ↗</span></a></section>
