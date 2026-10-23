@@ -28,8 +28,8 @@ interestForm?.addEventListener('submit', async (event) => {
     return;
   }
 
-  const { url, anonKey } = window.SUPABASE_CONFIG || {};
-  if (!url || !anonKey) {
+  const { url, publishableKey } = window.SUPABASE_CONFIG || {};
+  if (!url || !publishableKey) {
     formStatus.textContent = '온라인 접수를 준비 중입니다. 대표번호 1668-4116으로 문의해 주세요.';
     return;
   }
@@ -39,11 +39,11 @@ interestForm?.addEventListener('submit', async (event) => {
   formStatus.textContent = '등록 내용을 보내고 있습니다.';
 
   try {
-    const response = await fetch(`${url.replace(/\/$/, '')}/rest/v1/interest_leads`, {
+    const endpoint = url.replace(/\/$/, '') + '/rest/v1/interest_leads';
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
-        apikey: anonKey,
-        Authorization: `Bearer ${anonKey}`,
+        apikey: publishableKey,
         'Content-Type': 'application/json',
         Prefer: 'return=minimal'
       },
