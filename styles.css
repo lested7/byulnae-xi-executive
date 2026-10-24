@@ -90,3 +90,68 @@
 .owner-video-caption p{margin:0;color:#69746a;font-size:14px}
 .owner-video-caption>a{width:44px;height:44px;display:grid;place-items:center;background:var(--green);color:#fff;font-size:20px}
 @media(max-width:620px){.owner-video-caption{margin-top:16px}.owner-video-caption h3{font-size:18px}.owner-video-caption p{font-size:12px}.owner-video-caption>a{width:38px;height:38px}.owner-video-play{width:56px;height:56px}.owner-video-badge{font-size:10px}}
+
+/* Premium navy and champagne palette inspired by the project reference. */
+:root{--paper:#f5f2eb;--ink:#172333;--muted:#777d83;--green:#10243a;--lime:#d7bb7b;--line:#d8d1c2}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:#071728;color:#fff;border-bottom:1px solid #d7bb7b55}
+.brand,.main-nav{color:#fff}
+.brand-mark{background:#d7bb7b;color:#10243a;border-radius:2px}
+.main-nav a{color:#f0eee9}
+.header-cta.phone-cta{background:#10243a;color:#fff;border:1px solid #d7bb7b;border-radius:2px}
+.header-cta .phone-label{color:#e0c98e;border-color:#b89a5b}
+.hero{min-height:min(790px,calc(100vh - 82px));padding:88px 8.5% 76px;display:flex;align-items:center;justify-content:flex-end;background:#061426 url("https://www.xi.co.kr/Files/cmsMain/20260825_142415_707001.jpg") center 48%/cover no-repeat;color:#fff}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07111e16 0%,#07111e47 40%,#07111edb 100%);z-index:0}
+.hero-copy{width:min(100%,650px);padding:20px 0 35px;text-align:right;z-index:1}
+.eyebrow,.hero-desc,.hero-note{color:#f1eee7}
+.eyebrow{justify-content:flex-end;letter-spacing:.17em}
+.eyebrow-dot,.note-line{background:#d7bb7b}
+.hero h1{font-size:clamp(48px,5.6vw,82px);line-height:1.22;color:#fff;text-shadow:0 3px 22px #0005}
+.hero h1 em{color:#dfc88e}
+.hero-desc{font-size:15px;text-shadow:0 2px 12px #0008}
+.hero-actions{justify-content:flex-end}
+.hero-actions .button-dark{background:#d7bb7b;color:#10243a;border-radius:2px;box-shadow:0 8px 24px #0003}
+.hero-actions .text-link{color:#fff;border-bottom-color:#d7bb7b}
+.hero-note{justify-content:flex-end}
+.hero-index{color:#f1eee7}
+.index-rule{background:#d7bb7b}
+.hero-visual{display:none}
+.intro{background:#f0ede5}
+.section-label{color:#7f6a43}
+.section-label span,.stats strong{color:#10243a}
+.stats{border-color:#cfc7b6}
+.complex-figure{box-shadow:0 18px 42px #10243a1c}
+.complex-figure figcaption{background:#fff;color:#74736c}
+.plans-section{background:#e9e5db}
+.type-card{border-color:#d7cfbf;background:#fff;box-shadow:0 8px 28px #10243a0d}
+.floorplan-card{background:#dcd7ca}
+.floorplan-card .arrow-link{background:#10243a;border-color:#10243a;border-radius:2px}
+.videos-section{background:#f9f8f4}
+.owner-video{box-shadow:0 22px 55px #10243a25}
+.owner-video-play,.owner-video-caption>a{background:#10243a;color:#e4ce98}
+.owner-video-badge{background:#10243a;color:#f7f2e7}
+.regions-section{background:#e9e5db}
+.region-list{border-color:#cec6b6}
+.region-list>a{border-color:#cec6b6}
+.reservation-link{color:#10243a}
+.closing{background:#071728}
+.closing .call-button{border-radius:2px;background:#d7bb7b;color:#10243a}
+.site-footer{background:#061426;color:#eee9dd}
+.site-footer a,.footer-phone{color:#e0c98e}
+.floating-phone{background:#10243a}
+@media(max-width:850px){.hero{min-height:680px;padding-inline:7%}}
+@media(max-width:620px){
+  .site-header{background:#071728;padding-inline:5%}
+  .main-nav{background:#071728}
+  .hero{min-height:680px;padding:55px 7% 62px;background-position:54% center}
+  .hero:before{background:linear-gradient(90deg,#07111e40 0%,#07111e75 43%,#07111edb 100%)}
+  .hero-copy{padding:0;text-align:right}
+  .hero h1{font-size:clamp(42px,11vw,56px)}
+  .hero-desc{font-size:13px}
+  .hero-actions{gap:15px;align-items:center;flex-wrap:wrap}
+  .hero-actions .button{padding:15px 17px}
+  .hero-note{margin-top:35px}
+  .intro,.videos-section,.regions-section{padding-top:78px;padding-bottom:78px}
+  .plans-section{padding-top:78px;padding-bottom:78px}
+  .closing{padding-top:54px;padding-bottom:54px}
+}
