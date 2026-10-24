@@ -101,7 +101,7 @@ body{background:var(--paper);color:var(--ink)}
 .header-cta.phone-cta{background:#10243a;color:#fff;border:1px solid #d7bb7b;border-radius:2px}
 .header-cta .phone-label{color:#e0c98e;border-color:#b89a5b}
 .hero{min-height:min(790px,calc(100vh - 82px));padding:88px 8.5% 76px;display:flex;align-items:center;justify-content:flex-end;background:#061426 url("https://www.xi.co.kr/Files/cmsMain/20260825_142415_707001.jpg") center 48%/cover no-repeat;color:#fff}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07111e16 0%,#07111e47 40%,#07111edb 100%);z-index:0}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07111e10 0%,#07111e20 34%,#07111eae 55%,#07111ef7 68%,#07111eff 100%);z-index:0}
 .hero-copy{width:min(100%,650px);padding:20px 0 35px;text-align:right;z-index:1}
 .eyebrow,.hero-desc,.hero-note{color:#f1eee7}
 .eyebrow{justify-content:flex-end;letter-spacing:.17em}
@@ -144,7 +144,7 @@ body{background:var(--paper);color:var(--ink)}
   .site-header{background:#071728;padding-inline:5%}
   .main-nav{background:#071728}
   .hero{min-height:680px;padding:55px 7% 62px;background-position:54% center}
-  .hero:before{background:linear-gradient(90deg,#07111e40 0%,#07111e75 43%,#07111edb 100%)}
+  .hero:before{background:linear-gradient(90deg,#07111e35 0%,#07111e7a 36%,#07111eef 61%,#07111eff 100%)}
   .hero-copy{padding:0;text-align:right}
   .hero h1{font-size:clamp(42px,11vw,56px)}
   .hero-desc{font-size:13px}
