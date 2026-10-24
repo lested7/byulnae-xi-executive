@@ -80,9 +80,13 @@
 .floating-phone{display:none}
 @media(max-width:620px){body{padding-bottom:0}}
 .owner-video{width:min(100%,420px);margin:0 auto;aspect-ratio:9/16;background:#15251e;box-shadow:0 22px 55px #18261e1c}
-.owner-video iframe{display:block;width:100%;height:100%;border:0}
+.owner-video{position:relative;display:block;overflow:hidden}
+.owner-video img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.owner-video:hover img{transform:scale(1.035)}
+.owner-video-play{position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);display:grid;place-items:center;padding-left:5px;border-radius:50%;background:#fff;color:var(--green);font-size:20px;box-shadow:0 8px 30px #0004}
+.owner-video-badge{position:absolute;left:16px;bottom:15px;padding:8px 11px;background:#153d2c;color:#fff;font-size:11px;letter-spacing:.04em}
 .owner-video-caption{width:min(100%,1000px);margin:22px auto 0;display:flex;justify-content:space-between;align-items:center}
 .owner-video-caption h3{margin:8px 0 5px;font-size:21px;letter-spacing:-.05em}
 .owner-video-caption p{margin:0;color:#69746a;font-size:14px}
 .owner-video-caption>a{width:44px;height:44px;display:grid;place-items:center;background:var(--green);color:#fff;font-size:20px}
-@media(max-width:620px){.owner-video-caption{margin-top:16px}.owner-video-caption h3{font-size:18px}.owner-video-caption p{font-size:12px}.owner-video-caption>a{width:38px;height:38px}}
+@media(max-width:620px){.owner-video-caption{margin-top:16px}.owner-video-caption h3{font-size:18px}.owner-video-caption p{font-size:12px}.owner-video-caption>a{width:38px;height:38px}.owner-video-play{width:56px;height:56px}.owner-video-badge{font-size:10px}}
